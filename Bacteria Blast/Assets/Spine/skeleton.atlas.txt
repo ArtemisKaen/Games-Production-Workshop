@@ -1,0 +1,167 @@
+
+skeleton.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body/Bahkraken_0000s_0000_lower
+  rotate: false
+  xy: 2, 245
+  size: 363, 265
+  orig: 363, 265
+  offset: 0, 0
+  index: -1
+Body/Bahkraken_0000s_0001_upper
+  rotate: false
+  xy: 367, 309
+  size: 364, 201
+  orig: 364, 201
+  offset: 0, 0
+  index: -1
+Body/Bahkraken_0000s_0002_inner
+  rotate: false
+  xy: 2, 38
+  size: 220, 205
+  orig: 220, 205
+  offset: 0, 0
+  index: -1
+Eye/eye
+  rotate: false
+  xy: 733, 329
+  size: 141, 181
+  orig: 141, 181
+  offset: 0, 0
+  index: -1
+Eye/pupil
+  rotate: false
+  xy: 224, 2
+  size: 43, 62
+  orig: 43, 62
+  offset: 0, 0
+  index: -1
+leg1 3p/Bahkraken_0008s_0000_leg1-seg1
+  rotate: true
+  xy: 404, 106
+  size: 66, 90
+  orig: 66, 90
+  offset: 0, 0
+  index: -1
+leg1 3p/Bahkraken_0008s_0001_leg1-seg2
+  rotate: false
+  xy: 876, 333
+  size: 91, 106
+  orig: 91, 106
+  offset: 0, 0
+  index: -1
+leg2 3p/Bahkraken_0007s_0000_leg2-seg1
+  rotate: true
+  xy: 487, 179
+  size: 73, 80
+  orig: 73, 80
+  offset: 0, 0
+  index: -1
+leg2 3p/Bahkraken_0007s_0001_leg2-seg2
+  rotate: false
+  xy: 710, 235
+  size: 102, 55
+  orig: 102, 55
+  offset: 0, 0
+  index: -1
+leg2 3p/Bahkraken_0007s_0002_leg2-tip
+  rotate: false
+  xy: 733, 292
+  size: 139, 35
+  orig: 139, 35
+  offset: 0, 0
+  index: -1
+leg3 5p/Bahkraken_0006s_0000_leg3-seg1
+  rotate: false
+  xy: 367, 254
+  size: 203, 53
+  orig: 203, 53
+  offset: 0, 0
+  index: -1
+leg3 5p/Bahkraken_0006s_0001_leg3-seg2
+  rotate: true
+  xy: 224, 66
+  size: 177, 57
+  orig: 177, 57
+  offset: 0, 0
+  index: -1
+leg3 5p/Bahkraken_0006s_0002_leg3-seg3
+  rotate: false
+  xy: 572, 259
+  size: 136, 48
+  orig: 136, 48
+  offset: 0, 0
+  index: -1
+leg3 5p/Bahkraken_0006s_0003_leg3-seg4
+  rotate: true
+  xy: 283, 107
+  size: 136, 63
+  orig: 136, 63
+  offset: 0, 0
+  index: -1
+leg3 5p/Bahkraken_0006s_0004_leg3-tip
+  rotate: false
+  xy: 876, 441
+  size: 131, 69
+  orig: 131, 69
+  offset: 0, 0
+  index: -1
+leg4 2p/Bahkraken_0003s_0000_leg4-seg
+  rotate: true
+  xy: 814, 234
+  size: 56, 74
+  orig: 56, 74
+  offset: 0, 0
+  index: -1
+leg4 2p/Bahkraken_0003s_0001_leg4-tip
+  rotate: false
+  xy: 958, 248
+  size: 59, 80
+  orig: 59, 80
+  offset: 0, 0
+  index: -1
+leg5 3p/Bahkraken_0002s_0000_leg5-seg1
+  rotate: false
+  xy: 496, 103
+  size: 66, 74
+  orig: 66, 74
+  offset: 0, 0
+  index: -1
+leg5 3p/Bahkraken_0002s_0001_leg5-seg2
+  rotate: false
+  xy: 283, 26
+  size: 65, 79
+  orig: 65, 79
+  offset: 0, 0
+  index: -1
+leg5 3p/Bahkraken_0002s_0002_leg5-tip
+  rotate: false
+  xy: 890, 246
+  size: 66, 85
+  orig: 66, 85
+  offset: 0, 0
+  index: -1
+leg6 3p/Bahkraken_0001s_0000_leg6-seg1
+  rotate: false
+  xy: 404, 174
+  size: 81, 78
+  orig: 81, 78
+  offset: 0, 0
+  index: -1
+leg6 3p/Bahkraken_0001s_0001_leg6-seg2
+  rotate: true
+  xy: 348, 139
+  size: 104, 54
+  orig: 104, 54
+  offset: 0, 0
+  index: -1
+leg6 3p/Bahkraken_0001s_0002_leg6-tip
+  rotate: true
+  xy: 969, 330
+  size: 109, 42
+  orig: 109, 42
+  offset: 0, 0
+  index: -1
