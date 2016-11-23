@@ -1,18 +1,42 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Bacteria : MonoBehaviour {
 
     public int bacteriaHealth = 10;
-    public int bacteriaDamage = 1;
     public GameObject bullet;
     public Bullet bulletScript;
+	public GameObject defenceObject;
+	private DefencePoint defencePointScript;
+	private Text healthText;
+
+	private bool stopDrainHealth = false;
+
+	IEnumerator drainHealth()
+	{
+		while (stopDrainHealth == false)
+		{
+			defencePointScript.organHealth -= 1;
+			UpdateHealth();
+			Debug.Log("Ow...");
+			yield return new WaitForSeconds(1.0f);
+		}
+
+		stopDrainHealth = false;
+	}
 
 	// Use this for initialization
 	void Start ()
     {
-        //sets variable to hold bullet damage from projectile
         bulletScript = bullet.gameObject.GetComponent<Bullet>();
+		defenceObject = GameObject.Find("DefencePoint");
+		defencePointScript = defenceObject.GetComponent<DefencePoint>();
+
+		GameObject healthTextGO = GameObject.Find("healthText");
+		healthText = healthTextGO.GetComponent<Text>();
+
+		UpdateHealth ();
     }
 	
 	// Update is called once per frame
@@ -24,23 +48,40 @@ public class Bacteria : MonoBehaviour {
         }
 	}
 
-    //add stuff like score added for player after death of enemy here
     void kill()
     {
         Destroy(gameObject);
+        
     }
 
-    //Makes checks for collision, then applies damage from Bullet script
-    void OnTriggerEnter2D(Collider2D other)
+	void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("contact");
         if (other.tag == "Projectile")
         {
             bacteriaHealth = bacteriaHealth - bulletScript.damage;
             Debug.Log ("Hit dat mofucka");
         }
-        
+		if (other.tag == "DefencePoint")
+		{
+			StartCoroutine(drainHealth ()); 
+			Debug.Log ("contact");
+		}
     }
+
+	void OnTriggerExit2D(Collider2D other)
+	{
+		if (other.tag == "DefencePoint")
+		{
+			stopDrainHealth = true;
+			Debug.Log("stop");
+		}
+	}
+
+
+	void UpdateHealth ()
+	{
+		healthText.text = "Health: " + defencePointScript.organHealth;
+	}
 
 
 }
