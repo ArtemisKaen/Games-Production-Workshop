@@ -63,9 +63,9 @@ public class PlayerController : MonoBehaviour
         Debug.Log("contact");
         if (other.tag == "Enemy")
         {
-            currentHealth = currentHealth - bacteriaScript.bacteriaDamage;
+            //currentHealth = currentHealth - bacteriaScript.bacteriaDamage;
 
-            Debug.Log("Hit dat mofucka");
+            Debug.Log("Hit taken");
         }
     }
     
